@@ -12,9 +12,10 @@ engDate = today.strftime("%B %d, %Y") # July 01,2023
 year = today.strftime("%Y") # 2023
 
 # website variables
-website_full = 'Yusuph Events planning & Planning'
+website_full = 'Yusuph Events planning planning & Cartening'
 website_short = 'yepc'
 slogan = 'Make Your Event Memorable with Us'
+developer = 'masterplan'
 
 # mode of the website
 if mode == 'production':
@@ -48,6 +49,8 @@ def index():
 def en_home():
     headers = {
         'title': website_full,
+        'description':'Welcome to our comprehensive event planning and catering services website. From weddings to corporate events, our team of experienced professionals is here to bring your vision to life. Discover our wide range of services, including venue selection, event coordination, and exquisite catering options. Whether you\'re hosting an intimate gathering or a grand celebration, trust us to handle every detail with meticulous care. Visit us now and let us turn your event into an unforgettable experience.',
+        'backend': developer,
 
     }
     return render_template('en-home.html',**context)
