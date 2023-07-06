@@ -5,6 +5,15 @@ app = Flask(__name__)
 mode = 'development'
 # mode = 'production'
 
+website_full = 'Yusuph Events planning & Planning'
+website_short = 'yepc'
+
+if mode == 'production':
+    home = 'https://yepc.vercel.app/'
+elif mode == 'development':
+    home = 'localhost:5000/'
+
+
 # the index page
 @app.route('/')
 def index():
@@ -18,4 +27,9 @@ def en_home():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    if mode == 'development':
+        app.run(debug=True)
+    elif mode == 'production':
+        #never show the errors to the users!
+        app.run()
+    
