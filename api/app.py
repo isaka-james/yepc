@@ -12,10 +12,11 @@ engDate = today.strftime("%B %d, %Y") # July 01,2023
 year = today.strftime("%Y") # 2023
 
 # website variables
-website_full = 'Yusuph Events planning planning & catering'
+website_full = 'Yusuph Events planning planning & Catering'
 website_short = 'yepc'
 slogan = 'Make Your Event Memorable with Us'
 developer = 'masterplan'
+logo = '/static/imgs/logos/logo-no-background.svg'
 
 # mode of the website
 if mode == 'production':
@@ -53,6 +54,7 @@ def en_home():
         'backend': developer,
         'lang': 'eng',
         'phoneNo': '(+255) 747 477 322',
+        'logo':logo,
 
     }
     return render_template('en-home.html',**headers)
