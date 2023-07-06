@@ -53,7 +53,7 @@ def en_home():
         'backend': developer,
 
     }
-    return render_template('en-home.html',**context)
+    return render_template('en-home.html',**headers)
 
 
 
