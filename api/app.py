@@ -86,7 +86,7 @@ def page_404(error):
     return redirect('/')
 
 # redirecting to https (443)
-@app.beforerequest
+@app.before_request
 def forwarding_https():
     if not request.is_secure:
         url = request.url.replace('http://','https://',1)
