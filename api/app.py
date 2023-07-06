@@ -51,6 +51,8 @@ def en_home():
         'title': website_full,
         'description':'Welcome to our comprehensive event planning and catering services website. From weddings to corporate events, our team of experienced professionals is here to bring your vision to life. Discover our wide range of services, including venue selection, event coordination, and exquisite catering options. Whether you\'re hosting an intimate gathering or a grand celebration, trust us to handle every detail with meticulous care. Visit us now and let us turn your event into an unforgettable experience.',
         'backend': developer,
+        'lang': 'eng',
+        'phoneNo': '(+255) 747 477 322',
 
     }
     return render_template('en-home.html',**headers)
