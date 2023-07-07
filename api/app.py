@@ -18,7 +18,7 @@ slogan = 'Make Your Event Memorable with Us'
 developer = 'masterplan'
 logo = '/static/imgs/logos/logo-no-background.svg'
 phoneNo = '(+255) 747 477 322'
-
+owner = 'Yusuph Event planning & Catering'
 
 # mode of the website
 if mode == 'production':
@@ -63,6 +63,7 @@ def en_home():
         'phoneNo': phoneNo,
         'logo':logo,
         'year': year,
+        'owner': owner,
 
     }
     return render_template('/en-home.html',**headers)
@@ -82,6 +83,7 @@ def en_nav(name):
             'phoneNo' : phoneNo,
             'logo': logo,
             'year': year,
+            'owner': owner,
         }
         return render_template('/en-service.html',**headers)
 
