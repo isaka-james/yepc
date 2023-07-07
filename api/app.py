@@ -65,7 +65,7 @@ def en_home():
         'year': year,
 
     }
-    return render_template('en-home.html',**headers)
+    return render_template('/en-home.html',**headers)
 
 
 
@@ -83,7 +83,7 @@ def en_nav(name):
             'logo': logo,
             'year': year,
         }
-        return render_template('en-services.html',**headers)
+        return render_template('/en-services.html',**headers)
 
     else:
         return redirect('/')
