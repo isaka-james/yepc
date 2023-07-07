@@ -17,6 +17,8 @@ website_short = 'yepc'
 slogan = 'Make Your Event Memorable with Us'
 developer = 'masterplan'
 logo = '/static/imgs/logos/logo-no-background.svg'
+phoneNo = '(+255) 747 477 322'
+
 
 # mode of the website
 if mode == 'production':
@@ -39,22 +41,26 @@ elif mode == 'development':
 ## ***********codes*and*functions************** #
 #################################################
 
-
+'''
 # The index page
 @app.route('/')
 def index():
     return redirect('/en/')
+'''
+
+# assumption made all the pages are english
+# but make the reserve for easy intergration of the system,
+# in the near future
 
 # the home (english) page
-@app.route('/en/')
+@app.route('/')
 def en_home():
     headers = {
         'title': website_full,
         'website_full': website_full,
         'description':'Welcome to our comprehensive event planning and catering services website. From weddings to corporate events, our team of experienced professionals is here to bring your vision to life. Discover our wide range of services, including venue selection, event coordination, and exquisite catering options. Whether you\'re hosting an intimate gathering or a grand celebration, trust us to handle every detail with meticulous care. Visit us now and let us turn your event into an unforgettable experience.',
         'backend': developer,
-        'lang': 'eng',
-        'phoneNo': '(+255) 747 477 322',
+        'phoneNo': phoneNo,
         'logo':logo,
         'year': year,
 
@@ -63,7 +69,27 @@ def en_home():
 
 
 
-
+# the navigation pages
+@app.route('/<name>')
+def en_nav(name):
+    if name == 'services':
+        # the service page is rendered here
+        headers = {
+            'title': 'Explore Our Services We Provide',
+            'website_full': website_full,
+            'description': 'Discover our comprehensive range of professional event planning and catering services at Yusuph Event Planning and Catering. From corporate events to weddings and special occasions, our team of experienced professionals is dedicated to creating unforgettable experiences. We offer meticulous event coordination, personalized menu options, exquisite cuisine, and top-notch service. Contact us today to bring your vision to life and make your event a resounding success.',
+            'backend': developer,
+            'phoneNo' : phoneNo,
+            'logo': logo,
+            'year': year,
+        }
+        return render_template('en-services',**headers)
+    
+    # when user use the clean link eg https://example.com/
+    elif name == '':
+        return redirect('/')
+    else:
+        return redirect('/')
 
 
 
