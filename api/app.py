@@ -84,10 +84,7 @@ def en_nav(name):
             'year': year,
         }
         return render_template('en-services.html',**headers)
-    
-    # when user use the clean link eg https://example.com/
-    elif name == '':
-        return redirect('/')
+
     else:
         return redirect('/')
 
