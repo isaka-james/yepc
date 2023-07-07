@@ -83,7 +83,7 @@ def en_nav(name):
             'logo': logo,
             'year': year,
         }
-        return render_template('en-services',**headers)
+        return render_template('en-services.html',**headers)
     
     # when user use the clean link eg https://example.com/
     elif name == '':
