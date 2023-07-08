@@ -1,5 +1,6 @@
 from flask import Flask,render_template,redirect,request
 from datetime import date
+import random
 
 app = Flask(__name__)
 
@@ -17,14 +18,27 @@ website_short = 'yepc'
 slogan = 'Make Your Event Memorable with Us'
 developer = 'masterplan'
 logo = '/static/imgs/logos/logo-no-background.svg'
-phoneNo = '(+255) 747 477 322'
 owner = 'Yusuph Event planning & Catering'
+phoneNos = ['255769665666','255672665664']
+phone = random.choice(phoneNos)
+
+
 
 # mode of the website
 if mode == 'production':
     home = 'https://yepc.vercel.app/'
 elif mode == 'development':
     home = 'localhost:5000/'
+
+# choose the random phoneNo
+if phone == '255769665666':
+    phoneNo = '(+255) 769 665 666'
+    phoneWp = '255769665666'
+elif phone == '255672665664':
+    phoneNo = '(+255) 747 477 322'
+    phoneWp = '(+255) 672 665 664'
+
+
 
 
 # ------------ end of the variables of the website ---------- #
