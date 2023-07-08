@@ -78,6 +78,7 @@ def en_home():
         'logo':logo,
         'year': year,
         'owner': owner,
+        'phoneWp': phoneWp,
 
     }
     return render_template('/en-home.html',**headers)
@@ -98,6 +99,7 @@ def en_nav(name):
             'logo': logo,
             'year': year,
             'owner': owner,
+            'phoneWp': phoneWp,
         }
         return render_template('/en-services.html',**headers)
 
