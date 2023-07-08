@@ -41,6 +41,17 @@ elif phone == '255672665664':
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 # ------------ end of the variables of the website ---------- #
 
 
