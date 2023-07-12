@@ -125,7 +125,7 @@ def en_nav(name):
             'owner': owner,
             'phoneWp': phoneWp,
         }
-        return render_template('/contact-us.html',**headers)
+        return 'hello'
     else:
         return redirect('/')
 
