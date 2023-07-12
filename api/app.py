@@ -119,8 +119,21 @@ def en_nav(name):
 
 
 
-
-
+# dealing with the contact us page
+@app.route('/contact-us')
+def about_us():
+    headers = {
+        'title': 'Contact Us',
+        'website_url': website_url,
+        'description': 'Visit this page to see Our Contacts, How to reach Us, Where do we found -Physical Address',
+        'backend': developer,
+        'phoneNo' : phoneNo,
+        'logo': logo,
+        'year': year,
+        'owner': owner,
+        'phoneWp': phoneWp,
+    }
+    return render_template('/contact-us',**headers)
 
 
 
