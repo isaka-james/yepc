@@ -121,7 +121,7 @@ def en_nav(name):
 
 # dealing with the contact us page
 @app.route('/contact-us')
-def about_us():
+def contact_us():
     headers = {
         'title': 'Contact Us',
         'website_url': website_url,
@@ -133,7 +133,7 @@ def about_us():
         'owner': owner,
         'phoneWp': phoneWp,
     }
-    return render_template('/contact-us',**headers)
+    return render_template('/contact-us.html',**headers)
 
 
 
