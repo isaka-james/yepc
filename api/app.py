@@ -113,7 +113,7 @@ def en_nav(name):
             'phoneWp': phoneWp,
         }
         return render_template('/en-services.html',**headers)
-    elif name == 'about-us':
+    elif name == 'contact-us':
         headers = {
             'title': 'Contact Us',
             'website_url': website_url,
@@ -125,7 +125,7 @@ def en_nav(name):
             'owner': owner,
             'phoneWp': phoneWp,
         }
-        return 'hello'
+        return render_template('/contact-us.html',**headers)
     else:
         return redirect('/')
 
