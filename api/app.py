@@ -116,22 +116,6 @@ def en_nav(name):
     else:
         return redirect('/')
 
- '''
-    elif name == 'contact-us':
-        headers = {
-            'title': 'Explore Our Services We Provide',
-            'website_full': website_full,
-            'description': 'Discover our comprehensive range of professional event planning and catering services at Yusuph Event Planning and Catering. From corporate events to weddings and special occasions, our team of experienced professionals is dedicated to creating unforgettable experiences. We offer meticulous event coordination, personalized menu options, exquisite cuisine, and top-notch service. Contact us today to bring your vision to life and make your event a resounding success.',
-            'backend': developer,
-            'phoneNo' : phoneNo,
-            'logo': logo,
-            'year': year,
-            'owner': owner,
-            'phoneWp': phoneWp,
-        }
-        return render_template('/en-contact.html',**headers)
-'''
-
 
 
 
