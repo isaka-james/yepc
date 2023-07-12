@@ -115,9 +115,9 @@ def en_nav(name):
         return render_template('/en-services.html',**headers)
     elif name == 'contact-us':
         headers = {
-            'title': 'Contact Us',
-            'website_url': website_url,
-            'description': 'Visit this page to see Our Contacts, How to reach Us, Where do we found -Physical Address',
+            'title': 'Explore Our Services We Provide',
+            'website_full': website_full,
+            'description': 'Discover our comprehensive range of professional event planning and catering services at Yusuph Event Planning and Catering. From corporate events to weddings and special occasions, our team of experienced professionals is dedicated to creating unforgettable experiences. We offer meticulous event coordination, personalized menu options, exquisite cuisine, and top-notch service. Contact us today to bring your vision to life and make your event a resounding success.',
             'backend': developer,
             'phoneNo' : phoneNo,
             'logo': logo,
@@ -125,7 +125,7 @@ def en_nav(name):
             'owner': owner,
             'phoneWp': phoneWp,
         }
-        return render_template('/contact-us.html',**headers)
+        return render_template('/en-services.html',**headers)
     else:
         return redirect('/')
 
