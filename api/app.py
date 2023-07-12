@@ -113,27 +113,22 @@ def en_nav(name):
             'phoneWp': phoneWp,
         }
         return render_template('/en-services.html',**headers)
-
+    elif name == 'about-us':
+        headers = {
+            'title': 'Contact Us',
+            'website_url': website_url,
+            'description': 'Visit this page to see Our Contacts, How to reach Us, Where do we found -Physical Address',
+            'backend': developer,
+            'phoneNo' : phoneNo,
+            'logo': logo,
+            'year': year,
+            'owner': owner,
+            'phoneWp': phoneWp,
+        }
+        return render_template('/contact-us.html',**headers)
     else:
         return redirect('/')
 
-
-
-# dealing with the contact us page
-@app.route('/contact-us')
-def contact_us():
-    headers = {
-        'title': 'Contact Us',
-        'website_url': website_url,
-        'description': 'Visit this page to see Our Contacts, How to reach Us, Where do we found -Physical Address',
-        'backend': developer,
-        'phoneNo' : phoneNo,
-        'logo': logo,
-        'year': year,
-        'owner': owner,
-        'phoneWp': phoneWp,
-    }
-    return render_template('/contact-us.html',**headers)
 
 
 
