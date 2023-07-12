@@ -113,7 +113,10 @@ def en_nav(name):
             'phoneWp': phoneWp,
         }
         return render_template('/en-services.html',**headers)
-    '''
+    else:
+        return redirect('/')
+
+ '''
     elif name == 'contact-us':
         headers = {
             'title': 'Explore Our Services We Provide',
@@ -127,11 +130,7 @@ def en_nav(name):
             'phoneWp': phoneWp,
         }
         return render_template('/en-contact.html',**headers)
-        '''
-    else:
-        return redirect('/')
-
-
+'''
 
 
 
