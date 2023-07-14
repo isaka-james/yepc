@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+    <title>{{ website_full }}/title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0, minimum-scale=1.0,maximum-scale=1.0" />
+   <style type="text/css">
+        #main .client_invoice .client_logo,
+        .client_lead_form .client_logo,
+        .icon-check {
+            color: #625f5f;
+        }
+
+        #main .client_invoice .client_logo {
+            font-weight: 600 !important;
+        }
+
+        body {
+            background: #FFF;
+        }
+
+        .public_header {
+            font-family: Quicksand;
+            color: #625f5f;
+        }
+
+        .public_header h1 {
+            color: #625f5f;
+            font-size: 1.5rem !important;
+            font-weight: 400 !important;
+        }
+
+        body .js-button,
+        #main .js-button,
+        body .js-button:hover,
+        #main .js-button:hover,
+        body .js-button:active,
+        #main .js-button:active {
+
+            color: #FFFFFF;
+            background: #0B763E;
+            border-color: #005d25;
+            ;
+
+            font-family: Quicksand;
+            font-size: 1rem !important;
+            font-weight: 400 !important;
+        }
+
+        #main .js-button_color .icon-check,
+        body .js-button_color .icon-check {
+            color: baseColor;
+        }
+
+        #main .js-button_text_color,
+        body .js-button_text_color {
+            color: #FFFFFF;
+        }
+
+        #main .js-font_color,
+        body .js-font_color {
+            color: #625f5f;
+        }
+
+        #main .js-font_color a,
+        body .js-font_color a {
+            color: #625f5f;
+            text-decoration: underline;
+        }
+
+        #main .js-font_family,
+        body .js-font_family {
+            font-family: Quicksand;
+            font-weight: 400 !important;
+        }
+
+        #main .js-font_family.user-answer,
+        body .js-font_family.user-answer {
+            font-size: 1rem !important;
+        }
+
+        #main .js-font_family ul.parsley-errors-list,
+        body .js-font_family ul.parsley-errors-list {
+            font-family: 'open_sansregular';
+        }
+
+        #dialogSettings #dialogButton1,
+        #dialogSettings #dialogSubmit {
+
+            color: #FFFFFF;
+            background: #0B763E;
+            border-color: #005d25;
+            ;
+
+            &:hover,
+            &:active {
+
+                color: #FFFFFF;
+                background: #0B763E;
+                border-color: #005d25;
+                ;
+            }
+        }
+
+        #dialogSettings #dialogButton1,
+        #dialogSettings #dialogSubmit,
+        #dialogSettings #dialogCancel {
+            font-family: Quicksand !important;
+            font-size: 1rem !important;
+        }
+
+        #lc_form .submit_form .btn,
+        .questions .js-font_family {
+            font-size: 1rem !important;
+        }
+
+        #main .quote_selector_btn .icon-check {
+            color: #0B763E;
+        }
+
+        #main .quote_selector_btn {
+            font-family: Quicksand;
+            font-size: 1rem !important;
+            font-weight: 400 !important;
+        }
+
+        #main .quote_selector_btn.selected {
+
+            color: #FFFFFF;
+            background: #0B763E;
+            border-color: #005d25;
+            ;
+        }
+
+        #main .quote_selector_btn.selected .icon-check {
+            color: #FFFFFF;
+        }
+
+        #main .client_invoice table.selection tbody tr:hover td {
+            background-color: rgba(147, 169, 207, 0.8) !important;
+            color: #FFFFFF !important;
+        }
+
+        #main .client_invoice table.selection tbody tr.selected td,
+        #main .client_invoice table.selection tbody tr.selected:hover td,
+        div.selected,
+        #customColor div.selected {
+            background-color: rgb(147, 169, 207) !important;
+            color: #FFFFFF !important;
+        }
+
+        #main .client_invoice .product-item-selectable:hover,
+        #main .client_invoice .product-item-selectable.selected,
+        #main .client_invoice .product-item-selectable.selected:hover {
+            background-color: rgb(147, 169, 207) !important;
+            color: #FFFFFF !important;
+        }
+
+        #main .client_invoice .client_head_right .js-font_family,
+        #main .client_invoice .product-title,
+        #contract .contract_content .js-font_family,
+        .sign p.js-font_family {
+            font-size: 1.15rem !important;
+        }
+
+        form#questionnaire .js-font_family {
+            font-size: 1rem !important;
+        }
+
+        form#questionnaire .file_upload {
+            font-size: 13px !important;
+        }
+
+        form#questionnaire .file_upload:hover {
+            font-size: 13px !important;
+        }
+
+        .new_questions .uploaded_file {
+            color: #0B763E !important;
+            text-decoration: underline;
+        }
+
+        form#questionnaire .js-font_family.surveyHeader {
+            font-size: 1.2rem !important;
+        }
+
+        .sign .next button b {
+            font-weight: 400 !important;
+        }
+
+        #main .client_invoice .sign .signed-span,
+        #main .client_invoice .total .js-font_family,
+        #main .client_invoice .balance-due .js-font_family {
+            font-size: 1.1rem !important;
+            font-weight: 400 !important;
+        }
+
+        #main .lc_form .static-text {
+            font-size: 1rem !important;
+            font-weight: 400 !important;
+        }
+
+        .public_header .invoice-total {
+            font-size: 1.5rem !important;
+            font-weight: 400 !important;
+        }
+
+        #main .client_invoice table thead tr th:first-child h3 {
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+        }
+
+        #main .client_invoice #product-item .product-item-header-left div:first-child {
+            font-size: 1rem !important;
+            font-weight: 600 !important;
+        }
+
+        .next h2 {
+            font-size: 1.2rem !important;
+            font-weight: 400 !important;
+        }
+
+        .hats-cp-booking .cp-times-section button {
+            border-color: #0B763E !important;
+        }
+
+        #hats-modal.terms-modal .actions-container .hats-button,
+        .cp-services-offered .hats-cp-confirmation-actions button,
+        .cp-services-offered .cp-services-action-button-container button,
+        #schedule-services-cp .hats-cp-inner .hats-cp-content ul.cp-services-list li.cp-product-offering button,
+        .hats-cp-booking .schedule-services-calendar-wrapper #datepicker .ui-datepicker .ui-state-active,
+        .hats-cp-booking .schedule-services-calendar-wrapper #datepicker .ui-datepicker .ui-widget-content .ui-state-active,
+        .hats-cp-booking .schedule-services-calendar-wrapper #datepicker .ui-datepicker .ui-widget-header .ui-state-active {
+            background-color: #0B763E !important;
+            color:
+                color: #FFFFFF;
+            background: #0B763E;
+            border-color: #005d25;
+             !important;
+            border-color: #0B763E !important;
+        }
+
+        #schedule-services-cp .hats-cp-inner .hats-cp-content h1,
+        #schedule-services-cp .hats-cp-inner .hats-cp-content ul.cp-services-list li.cp-product-offering h2,
+        div.business-title,
+        div.cp-footer-content,
+        p.cp-contact {
+            color: #625f5f !important;
+            font-family: Quicksand !important;
+        }
+
+        #schedule-services-cp .hats-cp-inner .hats-cp-content ul.hats-cp-services-menu li a {
+            color: #625f5f !important;
+        }
+
+        #schedule-services-cp .hats-cp-inner .hats-cp-content ul.hats-cp-services-menu li.active {
+            color: #0B763E !important;
+        }
+
+        .hats-cp-booking .schedule-services-calendar-wrapper #datepicker td.day.active::after,
+        #datepicker.hats-datepicker table tr td.day:hover:after,
+        #datepicker.hats-datepicker table tr td.day.focused:after,
+        #datepicker.hats-datepicker table tr td.day.active:after {
+            background-color: #0B763E;
+        }
+
+        div.border-inherit {
+            border-color: #625f5f !important;
+        }
+
+        #payment-schedule-details .fa-caret-right,
+        #payment-schedule-details .fa-caret-down {
+            color: #0B763E !important;
+        }
+
+        #payment-schedule-details .payment-toggle {
+            color: #0B763E !important;
+        }
+
+        #main .public_header .js-button {
+            font-size: 16px !important;
+        }
+    </style>
+</head>
+
+<body class="fluidWidth darkTheme" style="background: rgb(255, 255, 255);">
+    <div id="wrapper" style="max-width: 100%; min-width: 100%;">
+        <div id="main" style="">
+            <div>
+                <div id="lc_form" class="paper">
+                    <div>
+                        <div class="client_lead_form" data-bind="template: { if: leadForm() && leadForm().id, afterRender: function () {&#10;      $('.answerdate').datepicker({ dateFormat: 'MM dd, yy' });&#10;    }}, embedFormStyle: true">
+                            <form id="lead_form" class="paper-form lc_form" data-bind="event: { keypress: function(data, event) { if(event.keyCode == 13 && event.target.tagName != 'TEXTAREA'){ event.preventDefault(); return false;} else {return true;} } }">
+                                <ul data-bind="foreach: leadForm().questions" class="questions">
+                                    <li>
+
+                                        <!-- ko if: type != 'header' && type != 'div' -->
+                                        <label style="color: rgb(98, 95, 95);"><span class="question-label js-font_family" data-bind="text: question">Full Name</span><small data-bind="if: !required"></small></label>
+                                        <!-- /ko -->
+
+                                        <div>
+
+                                            <!-- ko if: type == 'text' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'input' && (maps_to == 'job_date' || maps_to == 'birthday') -->
+                                            <!-- /ko -->
+                                            <!-- ko if: type == 'input' && maps_to != 'job_date' && maps_to != 'birthday' -->
+                                            <input type="text" data-bind="attr: {'name': 'q' + id, 'data-parsley-required' : ($data.required?'true':'false'), 'data-parsley-type': (($data.maps_to === 'email') ? 'email' : null) }, value: $data.answer" name="q15868923" data-parsley-required="true" />
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'checkbox' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'header' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'div' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'select' || maps_to == 'lead_source' -->
+                                            <!-- /ko -->
+
+
+                                            <!-- ko if: type == 'multi' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'date' -->
+                                            <!-- /ko -->
+
+                                        </div>
+
+
+                                    </li>
+
+                                    <li>
+
+                                        <!-- ko if: type != 'header' && type != 'div' -->
+                                        <label style="color: rgb(98, 95, 95);"><span class="question-label js-font_family" data-bind="text: question">Email Address</span><small data-bind="if: !required"></small></label>
+                                        <!-- /ko -->
+
+                                        <div>
+
+                                            <!-- ko if: type == 'text' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'input' && (maps_to == 'job_date' || maps_to == 'birthday') -->
+                                            <!-- /ko -->
+                                            <!-- ko if: type == 'input' && maps_to != 'job_date' && maps_to != 'birthday' -->
+                                            <input type="text" data-bind="attr: {'name': 'q' + id, 'data-parsley-required' : ($data.required?'true':'false'), 'data-parsley-type': (($data.maps_to === 'email') ? 'email' : null) }, value: $data.answer" name="q15868924" data-parsley-required="true" data-parsley-type="email" />
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'checkbox' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'header' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'div' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'select' || maps_to == 'lead_source' -->
+                                            <!-- /ko -->
+
+
+                                            <!-- ko if: type == 'multi' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'date' -->
+                                            <!-- /ko -->
+
+                                        </div>
+
+
+                                    </li>
+
+                                    <li>
+
+                                        <!-- ko if: type != 'header' && type != 'div' -->
+                                        <label style="color: rgb(98, 95, 95);"><span class="question-label js-font_family" data-bind="text: question">Phone Number</span><small data-bind="if: !required">(Optional)</small></label>
+                                        <!-- /ko -->
+
+                                        <div>
+
+                                            <!-- ko if: type == 'text' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'input' && (maps_to == 'job_date' || maps_to == 'birthday') -->
+                                            <!-- /ko -->
+                                            <!-- ko if: type == 'input' && maps_to != 'job_date' && maps_to != 'birthday' -->
+                                            <input type="text" data-bind="attr: {'name': 'q' + id, 'data-parsley-required' : ($data.required?'true':'false'), 'data-parsley-type': (($data.maps_to === 'email') ? 'email' : null) }, value: $data.answer" name="q15868925" data-parsley-required="false" />
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'checkbox' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'header' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'div' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'select' || maps_to == 'lead_source' -->
+                                            <!-- /ko -->
+
+
+                                            <!-- ko if: type == 'multi' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'date' -->
+                                            <!-- /ko -->
+
+                                        </div>
+
+
+                                    </li>
+
+                                    <li>
+
+                                        <!-- ko if: type != 'header' && type != 'div' -->
+                                        <label style="color: rgb(98, 95, 95);"><span class="question-label js-font_family" data-bind="text: question">Event date</span><small data-bind="if: !required">(Optional)</small></label>
+                                        <!-- /ko -->
+
+                                        <div>
+
+                                            <!-- ko if: type == 'text' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'input' && (maps_to == 'job_date' || maps_to == 'birthday') -->
+                                            <!-- /ko -->
+                                            <!-- ko if: type == 'input' && maps_to != 'job_date' && maps_to != 'birthday' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'checkbox' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'header' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'div' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'select' || maps_to == 'lead_source' -->
+                                            <!-- /ko -->
+
+
+                                            <!-- ko if: type == 'multi' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'date' -->
+                                            <input type="text" class="answerdate frmTextbox" readonly="" data-bind="attr: {'name': 'q' + id, 'data-parsley-required' : ($data.required?'true':'false')}, value: $data.answer" name="q15868926" data-parsley-required="false" autocomplete="off" />
+                                            <!-- /ko -->
+
+                                        </div>
+
+
+                                    </li>
+
+                                    <li>
+
+                                        <!-- ko if: type != 'header' && type != 'div' -->
+                                        <label style="color: rgb(98, 95, 95);"><span class="question-label js-font_family" data-bind="text: question">Message</span><small data-bind="if: !required"></small></label>
+                                        <!-- /ko -->
+
+                                        <div>
+
+                                            <!-- ko if: type == 'text' -->
+                                            <textarea data-bind="attr: { 'name': 'q' + id, 'data-parsley-required' : ($data.required?'true':'false'), 'data-parsley-type': (($data.maps_to === 'email') ? 'email' : null) }, value: $data.answer" class="answer" name="q15868927" data-parsley-required="true"></textarea>
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'input' && (maps_to == 'job_date' || maps_to == 'birthday') -->
+                                            <!-- /ko -->
+                                            <!-- ko if: type == 'input' && maps_to != 'job_date' && maps_to != 'birthday' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'checkbox' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'header' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'div' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'select' || maps_to == 'lead_source' -->
+                                            <!-- /ko -->
+
+
+                                            <!-- ko if: type == 'multi' -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: type == 'date' -->
+                                            <!-- /ko -->
+
+                                        </div>
+
+
+                                    </li>
+                                </ul>
+
+                                <div class="submit_form">
+                                    <button id="lc_form_submit" class="btn btn-success btn-lg js-font_family" data-bind="click: function() {&#10;              dataModel.saveLeadForm($('#lead_form'), leadForm())&#10;            },&#10;            text: $root.brand_customization().lead_capture ? $root.brand_customization().lead_capture.submit : 'Submit'&#10;          " style="background: rgb(11, 118, 62); border-color: rgb(0, 93, 37); color: rgb(255, 255, 255);">Send Message</button>
+
+
+                                </div>
+
+                            </form>
+
+                            <div class="submit_msg js-font_family js-font_color" id="lc_submit_msg" style="display:none;">
+                                <center>
+                                    <p class="msg pb-2" style="color: rgb(98, 95, 95);"></p>
+                                    <button type="button" id="lc_close_form" class="btn btn-success btn-lg js-button js-font_color" data-bind="click: function() { dataModel.resetLeadForm($('#lead_form')); dataModel.showLeadForm(); } " style="background: rgb(11, 118, 62); border-color: rgb(0, 93, 37); color: rgb(255, 255, 255);">OK</button>
+                                </center>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

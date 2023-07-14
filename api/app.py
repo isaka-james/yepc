@@ -113,6 +113,20 @@ def en_nav(name):
             'phoneWp': phoneWp,
         }
         return render_template('/en-services.html',**headers)
+    elif name == 'contact-us':
+        # the contact-us page
+        headers = {
+            'title': 'Check how can you reach Us',
+            'website_full': website_full,
+            'description': 'Contact us with email, phone numbers, through whatsapp, telegram and etc',
+            'backend': developer,
+            'phoneNo': phoneNo,
+            'logo': logo,
+            'year': year,
+            'owner': owner,
+            'phoneWp': phoneWp,
+        }
+        return render_template('/en-contact-us.html',**headers)
     else:
         return redirect('/')
 
