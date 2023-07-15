@@ -132,7 +132,7 @@ def en_nav(name):
 
 
 
-@app.route('forms/<name>')
+@app.route('/forms/<name>')
 def forms(name):
     if name == 'en-form-contactus':
         headers = {
