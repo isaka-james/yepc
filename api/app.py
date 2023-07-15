@@ -26,7 +26,7 @@ phone = random.choice(phoneNos)
 
 # mode of the website
 if mode == 'production':
-    home = 'https://yepc.vercel.app/'
+    home = 'https://yusuph-event-planners.vercel.app/'
 elif mode == 'development':
     home = 'localhost:5000/'
 
@@ -129,6 +129,29 @@ def en_nav(name):
         return render_template('/en-contact-us.html',**headers)
     else:
         return redirect('/')
+
+
+
+@app.route('forms/<name>')
+def forms(name):
+    if name == 'en-form-contactus':
+        headers = {
+            'title': 'english form contact us',
+            'website_full': website_full,
+            'description': 'Contact us with email, phone numbers, through whatsapp, telegram and etc',
+            'backend': developer,
+            'phoneNo': phoneNo,
+            'logo': logo,
+            'year': year,
+            'owner': owner,
+            'phoneWp': phoneWp,
+        }
+        return render_template('/en-contact-form.html',**headers)
+    else:
+        return redirect('/')
+
+
+
 
 
 
